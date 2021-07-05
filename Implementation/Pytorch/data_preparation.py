@@ -36,12 +36,6 @@ import imageio
 #from sklearn.metrics import mean_absolute_percentage_error
 matplotlib.style.use('seaborn')
 get_ipython().run_line_magic('matplotlib', 'inline')
-#random.seed(42)
-#torch.manual_seed(42)
-#np.random.seed(42)
-
-
-# In[3]:
 
 
 # convert an array of values into a dataset matrix
