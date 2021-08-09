@@ -12,20 +12,24 @@ Short Data: March 10, 2020 to June 18, 2020
 
 Result on Long Data
   Mean Absolute error:
-  (https://user-images.githubusercontent.com/77930296/128710485-8da57ad1-e4d5-43a7-9e24-c85987b3e5c1.png)
+  ![Mean-Absolute-Error-on-long-data](https://user-images.githubusercontent.com/77930296/128711296-f4817b3f-c25d-4ff0-9842-2a9d93228a7f.png)
+
 
   Room Mean Squared Error:
-  (https://user-images.githubusercontent.com/77930296/128710842-5fe3e84d-ae84-4084-8999-f14229d4aab1.png)
+  ![Root-mean-squared-error-on-long-data](https://user-images.githubusercontent.com/77930296/128711372-e24f511c-0b41-4f3d-ba8d-6a6591db27a7.png)
 
   R2 Score:
-  (https://user-images.githubusercontent.com/77930296/128710796-6ed9ed87-620c-46d5-8986-72a69ebb1ccf.png)
+  ![R2-score-on-long-data](https://user-images.githubusercontent.com/77930296/128711343-87a9e24e-679e-40b2-ba0c-06f3dca47154.png)
+
 
 Result on Short Data:
  Mean Absolute error:
 ![Mean-Absolute-Error-on-short-data](https://user-images.githubusercontent.com/77930296/128711124-320b1622-f40f-4393-96bb-996d6b26556f.png)
 
   Room Mean Squared Error:
-  (https://user-images.githubusercontent.com/77930296/128710842-5fe3e84d-ae84-4084-8999-f14229d4aab1.png)
+  ![Root-mean-squared-error-on-short-data](https://user-images.githubusercontent.com/77930296/128711485-d93fbd1d-037c-4b8a-bc28-61ab0c91e723.png)
 
+  
   R2 Score:
-  (https://user-images.githubusercontent.com/77930296/128710796-6ed9ed87-620c-46d5-8986-72a69ebb1ccf.png)
+  ![R2-score-on-short-data](https://user-images.githubusercontent.com/77930296/128711409-a2e5cc94-c051-4862-995a-6c4c8ca524b6.png)
+
