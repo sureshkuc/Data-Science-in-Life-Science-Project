@@ -10,7 +10,29 @@ Proposed CNN model is the best model comparing to other models irrespective of d
 Long Data: March 10, 2020 to June 30, 2021
 Short Data: March 10, 2020 to June 18, 2020
 
+
+Result on Short Data:
+
+![Screenshot from 2021-08-09 15-13-27](https://user-images.githubusercontent.com/77930296/128712070-192af4e0-f7f9-4f5a-9c41-95409f096a89.png)
+
+
+Mean Absolute error:
+
+![Mean-Absolute-Error-on-short-data](https://user-images.githubusercontent.com/77930296/128711124-320b1622-f40f-4393-96bb-996d6b26556f.png)
+
+Root Mean Squared Error:
+
+![Root-mean-squared-error-on-short-data](https://user-images.githubusercontent.com/77930296/128711485-d93fbd1d-037c-4b8a-bc28-61ab0c91e723.png)
+
+  
+R2 Score:
+
+![R2-score-on-short-data](https://user-images.githubusercontent.com/77930296/128711409-a2e5cc94-c051-4862-995a-6c4c8ca524b6.png)
+
 Result on Long Data:
+
+![Screenshot from 2021-08-09 15-13-41](https://user-images.githubusercontent.com/77930296/128712131-5ac438fa-5c74-4ae6-a17d-7657923bf6ef.png)
+
 
 Mean Absolute error:
 
@@ -23,20 +45,4 @@ Root Mean Squared Error:
 R2 Score:
 
   ![R2-score-on-long-data](https://user-images.githubusercontent.com/77930296/128711343-87a9e24e-679e-40b2-ba0c-06f3dca47154.png)
-
-
-Result on Short Data:
-
-Mean Absolute error:
-
-![Mean-Absolute-Error-on-short-data](https://user-images.githubusercontent.com/77930296/128711124-320b1622-f40f-4393-96bb-996d6b26556f.png)
-
-  Root Mean Squared Error:
-  
-  ![Root-mean-squared-error-on-short-data](https://user-images.githubusercontent.com/77930296/128711485-d93fbd1d-037c-4b8a-bc28-61ab0c91e723.png)
-
-  
-  R2 Score:
-  
-  ![R2-score-on-short-data](https://user-images.githubusercontent.com/77930296/128711409-a2e5cc94-c051-4862-995a-6c4c8ca524b6.png)
 
