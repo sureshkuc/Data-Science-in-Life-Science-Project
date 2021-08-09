@@ -7,5 +7,15 @@ To run the code you need to put the code on google drive in single folder "colab
 
 Key Results:
 Proposed CNN model is performing well comparing to other models irrespective of data.
+Long Data: March 10, 2020 to June 30, 2021
+Short Data: March 10, 2020 to June 18, 2020
+Result on Long Data
+  Mean Absolute error:
+  (https://user-images.githubusercontent.com/77930296/128710485-8da57ad1-e4d5-43a7-9e24-c85987b3e5c1.png)
 
-file:///home/suresh/SoSe2021/DS-in-Life-Sciences/Mean-Absolute-Error-on-long-data.png![image](https://user-images.githubusercontent.com/77930296/128710485-8da57ad1-e4d5-43a7-9e24-c85987b3e5c1.png)
+  Room Mean Squared Error:
+  (https://user-images.githubusercontent.com/77930296/128710842-5fe3e84d-ae84-4084-8999-f14229d4aab1.png)
+
+  R2 Score:
+  (https://user-images.githubusercontent.com/77930296/128710796-6ed9ed87-620c-46d5-8986-72a69ebb1ccf.png)
+
