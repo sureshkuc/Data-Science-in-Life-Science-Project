@@ -9,6 +9,7 @@ Key Results:
 Proposed CNN model is the best model comparing to other models irrespective of data.
 Long Data: March 10, 2020 to June 30, 2021
 Short Data: March 10, 2020 to June 18, 2020
+
 Result on Long Data
   Mean Absolute error:
   (https://user-images.githubusercontent.com/77930296/128710485-8da57ad1-e4d5-43a7-9e24-c85987b3e5c1.png)
@@ -19,3 +20,12 @@ Result on Long Data
   R2 Score:
   (https://user-images.githubusercontent.com/77930296/128710796-6ed9ed87-620c-46d5-8986-72a69ebb1ccf.png)
 
+Result on Short Data:
+ Mean Absolute error:
+![Mean-Absolute-Error-on-short-data](https://user-images.githubusercontent.com/77930296/128711124-320b1622-f40f-4393-96bb-996d6b26556f.png)
+
+  Room Mean Squared Error:
+  (https://user-images.githubusercontent.com/77930296/128710842-5fe3e84d-ae84-4084-8999-f14229d4aab1.png)
+
+  R2 Score:
+  (https://user-images.githubusercontent.com/77930296/128710796-6ed9ed87-620c-46d5-8986-72a69ebb1ccf.png)
