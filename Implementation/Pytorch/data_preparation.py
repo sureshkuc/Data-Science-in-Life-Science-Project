@@ -40,8 +40,9 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 
 # convert an array of values into a dataset matrix
 def create_dataset(dataset, look_back=1, response_variable_index=0, number_feature = 6):
+  #to store x and y
   dataX, dataY = [], []
-  for i in range(len(dataset)-look_back-1):
+  for i in range(len(dataset)-look_back-1): # to get the values of previous x days, here look_back means time_steps
     a = dataset[i:(i+look_back),:number_feature]
     dataX.append(a)
     dataY.append(dataset[i + look_back, response_variable_index])
@@ -51,7 +52,7 @@ def create_dataset(dataset, look_back=1, response_variable_index=0, number_featu
 # In[4]:
 
 
-def data_preparation(df, scaling_range=(0,1),time_step=5,number_feature=6, response_variable_index=3,data_split_ratio=0.8,Suffle=True):
+def data_preparation(df, scaling_range=(0,1),time_step=5,number_feature=6, response_variable_index=3,data_split_ratio=0.8,Suffle=True,Eval=False):
     df = df.astype('float32')
     # normalize the dataset
     scaler = MinMaxScaler(feature_range=scaling_range)
@@ -62,11 +63,8 @@ def data_preparation(df, scaling_range=(0,1),time_step=5,number_feature=6, respo
     test_size = len(dataset) - train_size
     trainX, testX = X[0:train_size,:], X[train_size:len(dataset),:]
     trainY, testY = Y[0:train_size], Y[train_size:len(dataset)]
+    
     print(trainX.shape)
-    # reshape input to be [samples, time steps, features]
-    if not multi_feature:
-      trainX = np.reshape(trainX, (trainX.shape[0],trainX.shape[1],1))
-      testX = np.reshape(testX, (testX.shape[0], testX.shape[1],1))
     #print(trainX.shape)
     X_train=trainX
     X_test=testX
@@ -83,17 +81,18 @@ def data_preparation(df, scaling_range=(0,1),time_step=5,number_feature=6, respo
     train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=Suffle)
 
     y_test=testY.reshape(-1,1)
-
+    
     inputs = torch.from_numpy(X_test)
     targets = torch.from_numpy(y_test)
     # Define dataset
     #test_ds = TensorDataset(inputs, targets)
     test_ds=(inputs, targets)
+    if Eval:
+      return (torch.from_numpy(X_train),trainY),test_ds,scaler
     #test_loader = DataLoader(test_ds, batch_size=batch_size, shuffle=False)
     return train_loader, test_ds,scaler
 
 
-# In[ ]:
 
 
 
