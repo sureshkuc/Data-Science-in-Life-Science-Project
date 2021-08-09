@@ -2,10 +2,10 @@
 This project containts three folder:
 1. Implementation folder: It contains the implementation of project in Keras and pytorch both. However, we are using pytorch for final results.
 To run the code you need to put the code on google drive in single folder "colab folder" and then open the files in google colab. You require the following pytorch version to execute the code: 1.9.0+cu102. You need the GPU as well to run the code. 
-
 Other required information can be found in "read me" file at Implementation Folder.
+
 2. Indian-States-Covid19-Datasets Folder: It contains the data of all states.
-3. Indian-States-Model-Results: The results of CNN, LSTM, MLP and GRU deep learning models can be foound in this folder.
+4. Indian-States-Model-Results: The results of CNN, LSTM, MLP and GRU deep learning models can be foound in this folder.
 
 Key Results:
 Proposed CNN model is the best model comparing to other models irrespective of data.
