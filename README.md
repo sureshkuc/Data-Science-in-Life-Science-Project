@@ -6,7 +6,7 @@ To run the code you need to put the code on google drive in single folder "colab
 3. Indian-States-Model-Results: The results of CNN, LSTM, MLP and GRU deep learning models can be foound in this folder.
 
 Key Results:
-Proposed CNN model is performing well comparing to other models irrespective of data.
+Proposed CNN model is the best model comparing to other models irrespective of data.
 Long Data: March 10, 2020 to June 30, 2021
 Short Data: March 10, 2020 to June 18, 2020
 Result on Long Data
