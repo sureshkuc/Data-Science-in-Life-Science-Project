@@ -7,6 +7,7 @@ To run the code you need to put the code on google drive in single folder "colab
 
 Key Results:
 Proposed CNN model is the best model comparing to other models irrespective of data.
+
 Long Data: March 10, 2020 to June 30, 2021
 Short Data: March 10, 2020 to June 18, 2020
 
