@@ -1,3 +1,19 @@
+Project Abstract:
+This project focuses on the implementation of several artificial neural network models on a dataset of COVID-19 cases from
+India. The main goal is to evaluate these methods on long and short term training periods to find one that can efficiently predict
+the numbers in both cases while retaining a high efficacy. The project is based on the study "Multiple-Input Deep CNN Model
+for COVID-19 Forecasting in China" by Huang et al. 1 , that focuses on the need of an artificial neural network model capable of
+forecasting COVID-19 cases with only a short time period as training data at hand during the start of the COVID-19 pandemic.
+For this purpose, the artificial neural network methods Multilayer Perceptron (MLP), Convolutional Neural Network (CNN), Long
+Short-Term Memory (LSTM), and Gate Recurrent Unit (GRU) were used for predicting the cumulative confirmed cases of a
+given day based on the data of the previous five days including six time sequences (features) that influence the confirmed
+cases. The methods were evaluated with the R 2 score, Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE)
+metrics using multiple features as input. Like this, we also implemented the aforementioned methods using the Keras and
+Pytorch Python libraries and evaluated them respectively. The Indian dataset provides the same features and the models were
+trained and tested on data from five Indian states. Our experimental results revealed that the deep CNN model shows the best
+efficacy and the lowest error. We also explore the data from India in terms of health care, population density and interventions
+in the respective states that were most affected.
+
 # Data-Science-in-Life-Science-Project
 This project containts three folder:
 1. Implementation folder: It contains the implementation of project in Keras and pytorch both. However, we are using pytorch for final results.
