@@ -1,68 +1,122 @@
-Project Abstract:
-This project focuses on the implementation of several artificial neural network models on a dataset of COVID-19 cases from
-India. The main goal is to evaluate these methods on long and short term training periods to find one that can efficiently predict
-the numbers in both cases while retaining a high efficacy. The project is based on the study "Multiple-Input Deep CNN Model
-for COVID-19 Forecasting in China" by Huang et al. 1 , that focuses on the need of an artificial neural network model capable of
-forecasting COVID-19 cases with only a short time period as training data at hand during the start of the COVID-19 pandemic.
-For this purpose, the artificial neural network methods Multilayer Perceptron (MLP), Convolutional Neural Network (CNN), Long
-Short-Term Memory (LSTM), and Gate Recurrent Unit (GRU) were used for predicting the cumulative confirmed cases of a
-given day based on the data of the previous five days including six time sequences (features) that influence the confirmed
-cases. The methods were evaluated with the R 2 score, Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE)
-metrics using multiple features as input. Like this, we also implemented the aforementioned methods using the Keras and
-Pytorch Python libraries and evaluated them respectively. The Indian dataset provides the same features and the models were
-trained and tested on data from five Indian states. Our experimental results revealed that the deep CNN model shows the best
-efficacy and the lowest error. We also explore the data from India in terms of health care, population density and interventions
-in the respective states that were most affected.
+# COVID-19 Cases Forecasting in India using Neural Networks
 
-# Data-Science-in-Life-Science-Project
-This project containts three folder:
-1. Implementation folder: It contains the implementation of project in Keras and pytorch both. However, we are using pytorch for final results.
-To run the code you need to put the code on google drive in single folder "colab folder" and then open the files in google colab. You require the following pytorch version to execute the code: 1.9.0+cu102. You need the GPU as well to run the code. 
-Other required information can be found in "read me" file at Implementation Folder.
+## 📌 Project Overview
 
-2. Indian-States-Covid19-Datasets Folder: It contains the data of all states.
-4. Indian-States-Model-Results: The results of CNN, LSTM, MLP and GRU deep learning models can be foound in this folder.
+This project focuses on implementing multiple artificial neural network models to forecast COVID-19 cases in India. The objective is to evaluate different deep learning techniques for both short-term and long-term predictions and determine the most effective model.
 
-Key Results:
-Proposed CNN model is the best model comparing to other models irrespective of data.
+The project is inspired by the study **"Multiple-Input Deep CNN Model for COVID-19 Forecasting in China" by Huang et al.**, which emphasizes the need for a neural network-based approach capable of predicting COVID-19 cases even with limited training data.
 
-Long Data: March 10, 2020 to June 30, 2021
+### 🔬 Models Implemented:
+- **Multilayer Perceptron (MLP)**
+- **Convolutional Neural Network (CNN)**
+- **Long Short-Term Memory (LSTM)**
+- **Gated Recurrent Unit (GRU)**
 
-Short Data: March 10, 2020 to June 18, 2020
+Each model predicts daily cumulative confirmed COVID-19 cases using data from the previous five days and six influential features. The models are implemented in **PyTorch** and **Keras**, but PyTorch is used for the final results.
 
+---
 
-Result on Short Data:
+## 📂 Project Structure
 
-![Screenshot from 2021-08-09 15-13-27](https://user-images.githubusercontent.com/77930296/128712070-192af4e0-f7f9-4f5a-9c41-95409f096a89.png)
+```
+COVID-19-Forecasting/
+│── src/                 # Source code files
+│   ├── config.py        # Configuration settings
+│   ├── model.py         # Neural network model implementations
+│   ├── evaluation.py    # Evaluation metrics (R2, RMSE, MAE)
+│   ├── data_preparation.py  # Data preprocessing and feature engineering
+│   ├── model_fit_code.py    # Model training and validation
+│   ├── fetch_covid_data.py  # Data fetching script
+│   ├── main.py         # Main script to run the project
+│
+│── outputs/             # Model output files and performance visualization
+│   
+│── data/                # COVID-19 datasets for different Indian states
+│── documents/           # Research papers and references
+│── requirements.txt     # Dependencies
+│── README.md            # Project documentation
+```
 
+---
 
-Mean Absolute error:
+## 📊 Key Findings
 
-![Mean-Absolute-Error-on-short-data](https://user-images.githubusercontent.com/77930296/128711124-320b1622-f40f-4393-96bb-996d6b26556f.png)
+- **The CNN model outperforms all other models in both short-term and long-term forecasting.**
+- The models were trained and tested on COVID-19 data from five Indian states.
+- Model performance is evaluated using **R² score, RMSE, and MAE.**
 
-Root Mean Squared Error:
+### 📅 Dataset:
+- **Long-term data:** March 10, 2020 – June 30, 2021
+- **Short-term data:** March 10, 2020 – June 18, 2020
 
-![Root-mean-squared-error-on-short-data](https://user-images.githubusercontent.com/77930296/128711485-d93fbd1d-037c-4b8a-bc28-61ab0c91e723.png)
+---
 
-  
-R2 Score:
+## 📌 Results on Short-Term Data
 
-![R2-score-on-short-data](https://user-images.githubusercontent.com/77930296/128711409-a2e5cc94-c051-4862-995a-6c4c8ca524b6.png)
+### Model Predictions:
+![Short-Term Predictions](outputs/results-on-short-data.png)
 
-Result on Long Data:
+### Mean Absolute Error (MAE):
+![MAE Short-Term](outputs/Mean-Absolute-Error-on-short-data.png)
 
-![Screenshot from 2021-08-09 15-13-41](https://user-images.githubusercontent.com/77930296/128712131-5ac438fa-5c74-4ae6-a17d-7657923bf6ef.png)
+### Root Mean Squared Error (RMSE):
+![RMSE Short-Term](outputs/Root-mean-squared-error-on-short-data.png)
 
+### R² Score:
+![R2 Short-Term](outputs/R2-score-on-short-data.png)
 
-Mean Absolute error:
+---
 
-  ![Mean-Absolute-Error-on-long-data](https://user-images.githubusercontent.com/77930296/128711296-f4817b3f-c25d-4ff0-9842-2a9d93228a7f.png)
+## 📌 Results on Long-Term Data
 
-Root Mean Squared Error:
+### Model Predictions:
+![Long-Term Predictions](outputs/results-on-long-data.png)
 
-  ![Root-mean-squared-error-on-long-data](https://user-images.githubusercontent.com/77930296/128711372-e24f511c-0b41-4f3d-ba8d-6a6591db27a7.png)
+### Mean Absolute Error (MAE):
+![MAE Long-Term](outputs/Mean-Absolute-Error-on-long-data.png)
 
-R2 Score:
+### Root Mean Squared Error (RMSE):
+![RMSE Long-Term](outputs/Root-mean-squared-error-on-long-data.png)
 
-  ![R2-score-on-long-data](https://user-images.githubusercontent.com/77930296/128711343-87a9e24e-679e-40b2-ba0c-06f3dca47154.png)
+### R² Score:
+![R2 Long-Term](outputs/R2-score-on-long-data.png)
+
+---
+
+## 🛠 Setup & Installation
+
+### 1️⃣ Clone the repository:
+```bash
+git clone https://github.com/sureshkuc/COVID-19-Forecasting.git
+```
+
+### 2️⃣ Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Prepare the dataset:
+- Place the dataset files inside the `data/` folder.
+
+### 4️⃣ Run the model training:
+```bash
+python src/main.py
+```
+
+---
+
+## 📝 License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+## 🤝 Contributing
+We welcome contributions! Feel free to submit pull requests for improvements and new features.
+
+---
+
+## 📧 Contact
+For any questions or collaboration opportunities, reach out to:
+- **Email**: skcberlin@gmail.com
+- **LinkedIn**: 
 
